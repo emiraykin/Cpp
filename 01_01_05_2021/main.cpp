@@ -1,3 +1,33 @@
+
+UNDEFINED BEHAVIOR: KESİNLİKLE OLAMAMALI!! runtime'da yazılan kod herhangi bir şekilde davranabilir. Özellikle concurrency varsa sıkıntı.
+Unspecified BEHAVIOR: SIKINTI OLMAK ZORUNDA DEĞİL. BEKLENDİĞİ GİBİ ÇALIŞMAYABİLİR. foo(3) + bar(2) satırında hangi fonksiyonun önce çağıralacağı belli değildir. Ona göre farklı sonuç üretebilir. Senin yazdığın kodu derleyici farklı şekilde yazabilir. 
+implementation-defined :Farklı derleyicide farklı çıktılar çıkabilir ama derleyen dökğümante eder Unspesified behaviorun alt kümesi :derleyici  hangisini seçtiğini belirtmeli
+
+Name Lookup: isim neyin ismi? değişken, fonksiyon, sınıf??? Derleyici bunu bulur.
+
+Scope : name'in geçerli olacağı bölge
+
+
+---------------------------------------
+C'de implicint int var özellikle fonksiyonlarda : old style function definitions 
+
+C++ da böyle bir olay yok
+-----------------------------------------
+
+
+/*
+C'de
+
+void foo();
+
+
+void bar(void);
+
+
+farklı şeylerdi
+
+C++ da aynı
+*/
 /*
 
 C nin eski standartlarında implicit int var
